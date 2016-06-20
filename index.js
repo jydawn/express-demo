@@ -8,6 +8,9 @@ var app = express();
 app.use(bodyParser.json());
 
 // for parsing application/x-www-form-urlencoded
+// extended
+// - true: use https://www.npmjs.com/package/qs
+// - false: use https://www.npmjs.com/package/querystring
 app.use(bodyParser.urlencoded({ extended: true }));
 
 var users = [];
