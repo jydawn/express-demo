@@ -25,13 +25,13 @@ app.post('/user', function(req, res) {
   users.push({
   	name: name,
   	email: email
-  })
+  });
   res.sendStatus(201);
 });
 
 app.get('/users', function(req, res) {
   res.send(users);
-})
+});
 
 var server = app.listen(3000, function () {
   var host = server.address().address;
